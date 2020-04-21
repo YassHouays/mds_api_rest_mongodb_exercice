@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 
 routes(app);
 
-mongoose.connect('mongodb+srv://test:root@cours-zyx04.mongodb.net/test?retryWrites=true&w=majority',{ useNewUrlParser: true })
+mongoose.connect('mongodb+srv://test:mydigitalschool@cluster0-ovsdc.gcp.mongodb.net/test?retryWrites=true&w=majority',{ useNewUrlParser: true })
   .then(result => {
     app.listen(port);
     console.log('Your first node api is running on port: ' + port);
